@@ -1,0 +1,23 @@
+# --- Derleme Çıktıları ---
+# PDF'de belirtilen bin ve lib klasörlerinin içeriğini temiz tutar [cite: 82, 85]
+bin/*.exe
+bin/*
+lib/*.o
+lib/*
+
+# --- Geçici ve Yedek Dosyalar ---
+# Düzenleyicilerin (VS Code, Visual Studio, Dev-C++) oluşturduğu dosyalar
+.vscode/
+.vs/
+*.swp
+*.save
+*~
+
+# --- İşletim Sistemi Dosyaları ---
+Thumbs.db
+.DS_Store
+
+# --- Proje Özel Dosyaları ---
+# Eğer test amaçlı oluşturduğunuz geçici txt dosyaları varsa bunları görmezden gelir
+temp_dna.txt
+test_output.txt
