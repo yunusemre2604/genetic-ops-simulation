@@ -1,23 +1,27 @@
-# --- Derleme Çıktıları ---
-# PDF'de belirtilen bin ve lib klasörlerinin içeriğini temiz tutar [cite: 82, 85]
-bin/*.exe
-bin/*
-lib/*.o
-lib/*
+# --- Proje Özelinde Hariç Tutulanlar ---
+# Tüm alt klasörlerdeki bin ve lib klasörlerini ve içeriklerini engeller
+**/bin/
+**/lib/
 
-# --- Geçici ve Yedek Dosyalar ---
-# Düzenleyicilerin (VS Code, Visual Studio, Dev-C++) oluşturduğu dosyalar
-.vscode/
+# --- Derleme (Build) Dosyaları ---
+*.exe
+*.o
+*.obj
+*.out
+*.app
+*.log
+
+# --- IDE ve Editör Dosyaları ---
+# Visual Studio
 .vs/
-*.swp
-*.save
-*~
+*.user
+*.suo
+*.db
+*.opendb
+
+# VS Code
+.vscode/
 
 # --- İşletim Sistemi Dosyaları ---
 Thumbs.db
 .DS_Store
-
-# --- Proje Özel Dosyaları ---
-# Eğer test amaçlı oluşturduğunuz geçici txt dosyaları varsa bunları görmezden gelir
-temp_dna.txt
-test_output.txt
